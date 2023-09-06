@@ -58,7 +58,7 @@ function App() {
               <Snack items={drinks} cantFind="/drinks" />
             </Route>
             <Route path="/add">
-              <Add />
+              <Add setSnacks={setSnacks} setDrinks={setDrinks} snacks={snacks} drinks={drinks}/>
             </Route>
             <Route>
               <p>Hmmm. I can't seem to find what you want.</p>
